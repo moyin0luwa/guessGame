@@ -12,7 +12,7 @@ const userName = prompt('USERNAME: _')
 while(true){
   listOfGuesses = range(1,endRange)
   console.log('LEVEL' + userLevel + '--> Your current score is ' + userScore)
-  correctGuess =       listOfGuesses[Math.floor(Math.random()*listOfGuesses.length)]
+  correctGuess = listOfGuesses[Math.floor(Math.random()*listOfGuesses.length)]
   userGuess = prompt('Guess the chosen number in the range of 1 to ' + endRange)
   if (userGuess == correctGuess){
     endRange +=1
