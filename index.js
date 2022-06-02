@@ -15,9 +15,9 @@ while(true){
   correctGuess = listOfGuesses[Math.floor(Math.random()*listOfGuesses.length)]
   userGuess = prompt('Guess the chosen number in the range of 1 to ' + endRange)
   if (userGuess == correctGuess){
-    endRange +=1
-    userScore = userLevel * (userScore + 1)
-    userLevel +=1
+    endRange += 1
+    userScore += 1
+    userLevel += 1
     console.log("YOU WON!, You have now advanced to the next level \n") 
   }
   else{
